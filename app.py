@@ -41,7 +41,7 @@ def store_tweet(tweet_id, content):
         cursor.execute("INSERT INTO tweets (tweet_id, content) VALUES (?, ?)", (tweet_id, content))
         conn.commit()
 
-# This part of code is written by Rinku
+# This part of code is written by Rinku Tekchandani
 # Delete a tweet from the database
 def delete_tweet_from_db(tweet_id):
     with closing(get_db_connection()) as conn:
